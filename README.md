@@ -44,6 +44,35 @@ yarn add --dev \
 Add `"extends": "angellist"` to your `.eslintrc.js`
 
 
-## Example
+---
 
-...
+## Example Config
+
+```js
+module.exports = {
+  extends: [
+    'angellist',
+  ],
+
+  // TypeScript: you must specify where your tsconfig(s) are located
+  parserOptions: {
+    project: ['./tsconfig.json', './tsconfig.server.json'],
+  },
+
+  // rule overrides
+  rules: {
+
+  },
+
+  // declare which API's are polyfilled (and thus ignored)
+  settings: {
+    polyfills: [
+      'Promise',
+      'Object.values',
+      'window.scrollTo',
+      'window.scrollY',
+      'URLSearchParams',
+    ],
+  },
+};
+```
