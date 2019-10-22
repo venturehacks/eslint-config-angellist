@@ -1,0 +1,23 @@
+{
+  "buildCommand": "",
+  "scripts": {
+    "beforeStage": "run changelog",
+    "afterRelease": "echo Successfully released ${name} v${version} to ${repo.repository}."
+  },
+  "src": {
+    "tagName": "v${version}",
+    "afterReleaseCommand": "echo Successfully released ${name} v${version} to ${repo.repository}."
+  },
+  "git": {
+    "changelog": "git log --pretty=format:\"* %s (%h)\" [REV_RANGE]"
+  },
+  "github": {
+    "release": true,
+    "tokenRef": "RELEASE_IT_GITHUB_TOKEN",
+    "commitArgs": "-S"
+  },
+  "npm": {
+    "publish": false,
+    "private": true
+  }
+}

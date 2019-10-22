@@ -7,6 +7,16 @@
   "author": "Drew Lustro <drew@angel.co>",
   "license": "MIT",
   "private": true,
+  "scripts": {
+    "changelog": "npx auto-changelog --package --commit-limit false",
+    "release-major": "release-it major",
+    "release-minor": "release-it minor",
+    "release-patch": "release-it patch"
+  },
+  "devDependencies": {
+    "auto-changelog": "^1.16.1",
+    "release-it": "^10.4.4"
+  },
   "peerDependencies": {
     "@typescript-eslint/eslint-plugin": "^2.5.0",
     "@typescript-eslint/eslint-plugin-tslint": "^2.5.0",
