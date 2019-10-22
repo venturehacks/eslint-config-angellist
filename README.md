@@ -36,7 +36,7 @@ yarn add --dev \
   'eslint@6.5.1' \
   'tslint-config-prettier@1.18.0' \
   'tslint-react@4.1.0' \
-  'tslint@5.20.0
+  'tslint@5.20.0'
 ```
 
 ### 3. Modify your ESLint config
