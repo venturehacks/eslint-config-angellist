@@ -96,6 +96,7 @@ module.exports = {
       'error',
       {
         order: [
+          'static-variables',
           'static-methods',
           'instance-variables',
           'lifecycle',
@@ -344,13 +345,6 @@ module.exports = {
     },
     react: {
       version: 'detect',
-    },
-    polyfills: [
-      'Promise',
-      'Object.values',
-      'window.scrollTo',
-      'window.scrollY',
-      'URLSearchParams',
-    ],
+    }
   },
 };
