@@ -181,6 +181,7 @@ module.exports = {
         devDependencies: ['**/*.test.*', '**/lib/testing/**/*'],
       },
     ],
+    'import/no-named-as-default': 'off',
     'arrow-body-style': 'off',
     'arrow-parens': ['off', 'as-needed'],
     'class-methods-use-this': [
@@ -213,9 +214,12 @@ module.exports = {
     'no-bitwise': 'error',
     'no-caller': 'error',
     'no-cond-assign': 'error',
-    'no-console': ['error', {
-      allow: ['warn', 'error']
-    }],
+    'no-console': [
+      'error',
+      {
+        allow: ['warn', 'error'],
+      },
+    ],
     'no-debugger': 'error',
     'no-duplicate-case': 'error',
     'no-empty': 'error',
@@ -279,7 +283,7 @@ module.exports = {
     ],
     'prefer-object-spread': 'error',
     'quote-props': 'off',
-    'radix': 'error',
+    radix: 'error',
     'sort-keys': 'off',
     'sort-keys-fix/sort-keys-fix': 'warn',
     'sort-vars': 'error',
@@ -345,6 +349,6 @@ module.exports = {
     },
     react: {
       version: 'detect',
-    }
+    },
   },
 };
