@@ -40,7 +40,12 @@ module.exports = {
 
   rules: {
     '@typescript-eslint/adjacent-overload-signatures': 'error',
-    '@typescript-eslint/array-type': ['warn', 'array'],
+    '@typescript-eslint/array-type': [
+      'warn',
+      {
+        default: 'array',
+      },
+    ],
     '@typescript-eslint/ban-ts-ignore': 'off',
     '@typescript-eslint/ban-types': 'error',
     '@typescript-eslint/camelcase': 'off',

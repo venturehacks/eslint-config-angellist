@@ -43,16 +43,13 @@ yarn add --dev \
 
 Add `"extends": "angellist"` to your `.eslintrc.js`
 
-
 ---
 
 ## Example Config
 
 ```js
 module.exports = {
-  extends: [
-    'angellist',
-  ],
+  extends: ['angellist'],
 
   // TypeScript: you must specify where your tsconfig(s) are located
   parserOptions: {
@@ -92,7 +89,7 @@ Place these in `package.json`
     // tslint helpers
     "tslint": "tslint --project . -t grouped",
     "tslint:fix": "tslint  --project . --fix -t grouped",
-    "tslint:vscode": "tslint --project . -t vscode",
+    "tslint:vscode": "tslint --project . -t vscode"
   }
 }
 ```
