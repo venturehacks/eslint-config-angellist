@@ -25,6 +25,7 @@ module.exports = {
     '@typescript-eslint',
     '@typescript-eslint/tslint',
     'react',
+    'react-hooks',
   ],
   env: {
     browser: true,
@@ -40,7 +41,7 @@ module.exports = {
   rules: {
     'prettier/prettier': 'off', // prettier is expensive, so we don't run it as part of eslint
     '@typescript-eslint/adjacent-overload-signatures': 'error',
-    '@typescript-eslint/array-type': 'error',
+    '@typescript-eslint/array-type': ['warn', 'array'],
     '@typescript-eslint/ban-types': 'error',
     '@typescript-eslint/class-name-casing': 'error',
     '@typescript-eslint/explicit-member-accessibility': 'off',
@@ -54,6 +55,7 @@ module.exports = {
     '@typescript-eslint/interface-name-prefix': 'error',
     '@typescript-eslint/member-delimiter-style': 'off',
     '@typescript-eslint/no-empty-interface': 'error',
+    '@typescript-eslint/no-empty-function': 'off',
     '@typescript-eslint/no-explicit-any': 'off',
     '@typescript-eslint/no-misused-new': 'error',
     '@typescript-eslint/no-namespace': [
@@ -175,6 +177,11 @@ module.exports = {
     'import/named': 'off',
     'import/namespace': 'off',
     'import/prefer-default-export': 'off',
+    'import/no-named-as-default': 'off',
+    'react-hooks/rules-of-hooks': 'error',
+    // has dangerous autofix; ok to set to 'warn' w/o husky autofix hook
+    'react-hooks/exhaustive-deps': 'off',
+    'import/extensions': 'off',
     'import/no-extraneous-dependencies': [
       'error',
       {
