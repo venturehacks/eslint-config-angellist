@@ -159,10 +159,12 @@ module.exports = {
     'eol-last': 'off',
     'func-names': 'off',
     'guard-for-in': 'error',
+    // TypeScript compiler itself handles these rules
     'import/extensions': 'off',
     'import/named': 'off',
     'import/namespace': 'off',
     'import/no-cycle': 'off',
+    'import/default': 'off',
     'import/no-extraneous-dependencies': [
       'error',
       {
@@ -170,6 +172,7 @@ module.exports = {
       },
     ],
     'import/no-named-as-default': 'off',
+    'import/no-named-as-default-member': 'off',
     'import/no-unresolved': 'off',
     'import/prefer-default-export': 'off',
     'jsx-a11y/no-autofocus': 'off',
