@@ -106,10 +106,6 @@ module.exports = {
         rules: {
           'comment-format': [true, 'check-space'],
           'jsdoc-format': [true, 'check-multiline-start'],
-          'jsx-key': true,
-          'jsx-no-bind': true,
-          'jsx-no-string-ref': true,
-          'jsx-self-close': true,
           'no-duplicate-imports': true,
           'no-duplicate-variable': [true, 'check-parameters'],
           'no-implicit-dependencies': [true, 'dev', ['~']],
