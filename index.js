@@ -142,7 +142,6 @@ module.exports = {
             'allow-pascal-case',
           ],
         },
-        rulesDirectory: ['./node_modules/tslint-react/rules'],
       },
     ],
     '@typescript-eslint/type-annotation-spacing': 'off',

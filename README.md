@@ -35,8 +35,7 @@ yarn add --dev \
   'eslint-plugin-typescript-sort-keys@1.2.0' \
   'eslint@7.3.1' \
   'tslint-config-prettier@1.18.0' \
-  'tslint-react@4.1.0' \
-  'tslint@5.20.1'
+  'tslint@6.1.2'
 ```
 
 ### 3. Modify your ESLint config
@@ -83,10 +82,8 @@ Place these in `package.json`
 ```json
 {
   "scripts": {
-    // eslint tyepscript only
     "eslint": "eslint '**/*.ts*' --format codeframe",
     "eslint:fix": "eslint '**/*.ts*' --format codeframe --fix",
-    // tslint helpers
     "tslint": "tslint --project . -t grouped",
     "tslint:fix": "tslint  --project . --fix -t grouped",
     "tslint:vscode": "tslint --project . -t vscode"
