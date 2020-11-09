@@ -110,7 +110,6 @@ module.exports = {
           'no-duplicate-variable': [true, 'check-parameters'],
           'no-implicit-dependencies': [true, 'dev', ['~']],
           'no-reference-import': true,
-          'no-shadowed-variable': true,
           'no-submodule-imports': [true, '~', 'next', 'date-fns'],
           'no-unused-expression': true,
           'only-arrow-functions': [
