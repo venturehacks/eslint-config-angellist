@@ -33,7 +33,7 @@ yarn add --dev \
   'eslint-plugin-react@7.20.2' \
   'eslint-plugin-sort-keys-fix@1.1.1' \
   'eslint-plugin-typescript-sort-keys@1.2.0' \
-  'eslint@7.3.1' \
+  'eslint@7.15.0' \
   'tslint-config-prettier@1.18.0' \
   'tslint@6.1.2'
 ```
