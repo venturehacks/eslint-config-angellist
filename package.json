@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-angellist",
-  "version": "0.4.4",
+  "version": "0.5.0",
   "description": "Sharable ESLint configuration for AngelList",
   "main": "index.js",
   "repository": "https://github.com/venturehacks/eslint-config-angellist",
@@ -21,7 +21,7 @@
     "@typescript-eslint/eslint-plugin": "3.5.0",
     "@typescript-eslint/eslint-plugin-tslint": "3.5.0",
     "@typescript-eslint/parser": "3.5.0",
-    "eslint": "7.3.1",
+    "eslint": "7.15.0",
     "eslint-config-airbnb-base": "14.2.0",
     "eslint-config-prettier": "6.11.0",
     "eslint-import-resolver-typescript": "2.0.0",
