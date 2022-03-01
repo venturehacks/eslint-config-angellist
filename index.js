@@ -18,7 +18,6 @@ module.exports = {
     sourceType: 'module',
   },
   plugins: [
-    'sort-keys-fix',
     'import',
     'jest',
     'typescript-sort-keys',
@@ -285,7 +284,6 @@ module.exports = {
       },
     ],
     'sort-keys': 'off',
-    'sort-keys-fix/sort-keys-fix': 'warn',
     'sort-vars': 'error',
     'space-before-function-paren': 'off',
     'typescript-sort-keys/interface': [
