@@ -14,8 +14,8 @@
     "release-patch": "release-it patch"
   },
   "devDependencies": {
-    "auto-changelog": "^1.16.1",
-    "release-it": "^10.4.4"
+    "auto-changelog": "1.16.4",
+    "release-it": "10.4.5"
   },
   "peerDependencies": {
     "@typescript-eslint/eslint-plugin": "5.13.0",
