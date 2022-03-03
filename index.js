@@ -18,12 +18,10 @@ module.exports = {
     sourceType: 'module',
   },
   plugins: [
-    'sort-keys-fix',
     'import',
     'jest',
     'typescript-sort-keys',
     '@typescript-eslint',
-    '@typescript-eslint/tslint',
     'react',
     'react-hooks',
   ],
@@ -57,10 +55,6 @@ module.exports = {
     '@typescript-eslint/ban-ts-ignore': 'off',
     '@typescript-eslint/ban-types': 'error',
     '@typescript-eslint/camelcase': 'off',
-    // '@typescript-eslint/camelcase': ['error', {
-    //   'properties': 'never',
-    //   'allow': ['^UNSAFE_']
-    // }],
     '@typescript-eslint/explicit-function-return-type': 'off',
     '@typescript-eslint/explicit-member-accessibility': 'off',
     '@typescript-eslint/indent': 'off',
@@ -100,44 +94,6 @@ module.exports = {
     '@typescript-eslint/prefer-for-of': 'error',
     '@typescript-eslint/prefer-function-type': 'error',
     '@typescript-eslint/prefer-namespace-keyword': 'error',
-    '@typescript-eslint/tslint/config': [
-      'error',
-      {
-        rules: {
-          'comment-format': [true, 'check-space'],
-          'jsdoc-format': [true, 'check-multiline-start'],
-          'no-duplicate-imports': true,
-          'no-duplicate-variable': [true, 'check-parameters'],
-          'no-implicit-dependencies': [true, 'dev', ['~']],
-          'no-reference-import': true,
-          'no-unused-expression': true,
-          'only-arrow-functions': [
-            true,
-            'allow-declarations',
-            'allow-named-functions',
-          ],
-          'ordered-imports': [
-            true,
-            {
-              'grouped-imports': true,
-              'import-sources-order': 'lowercase-last',
-              'module-source-path': 'full',
-              'named-imports-order': 'lowercase-last',
-            },
-          ],
-          'prefer-conditional-expression': true,
-          quotemark: [true, 'single', 'avoid-escape', 'jsx-double'],
-          'triple-equals': [true, 'allow-null-check'],
-          'variable-name': [
-            true,
-            'ban-keywords',
-            'check-format',
-            'allow-leading-underscore',
-            'allow-pascal-case',
-          ],
-        },
-      },
-    ],
     '@typescript-eslint/type-annotation-spacing': 'off',
     '@typescript-eslint/unified-signatures': 'error',
     'arrow-body-style': 'off',
@@ -328,7 +284,6 @@ module.exports = {
       },
     ],
     'sort-keys': 'off',
-    'sort-keys-fix/sort-keys-fix': 'warn',
     'sort-vars': 'error',
     'space-before-function-paren': 'off',
     'typescript-sort-keys/interface': [
