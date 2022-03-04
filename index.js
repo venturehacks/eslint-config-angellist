@@ -187,7 +187,7 @@ module.exports = {
     'no-shadow': 'off', // covered by @typescript-eslint/no-shadow
     '@typescript-eslint/no-shadow': ['error'],
     'no-use-before-define': 'off',  // covered by @typescript-eslint/no-use-before-define
-    "@typescript-eslint/no-use-before-define": ['error'],
+    "@typescript-eslint/no-use-before-define": 'off', // TS compiler covers this, and it's more annoying than useful otherwise
     'no-var': 'error',
     'object-shorthand': 'error',
     'one-var': 'error',
