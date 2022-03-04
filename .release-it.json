@@ -1,22 +1,20 @@
 {
-  "buildCommand": "",
-  "scripts": {
-    "beforeStage": "yarn run changelog",
-    "afterRelease": "echo Successfully released ${name} v${version} to ${repo.repository}."
-  },
-  "src": {
-    "tagName": "v${version}",
-    "afterReleaseCommand": "echo Successfully released ${name} v${version} to ${repo.repository}."
+  "hooks": {
+    "after:bump": "yarn changelog --package",
+    "after:release": "echo Successfully released ${name} v${version} to ${repo.repository}."
   },
   "git": {
-    "changelog": "git log --pretty=format:\"* %s (%h)\" [REV_RANGE]"
+    "changelog": "git log --pretty=format:\"* %s (%h)\" ${from}...${to}",
+    "commitArgs": ["--gpg-sign"],
+    "requireCleanWorkingDir": true
   },
   "github": {
     "release": true,
-    "tokenRef": "RELEASE_IT_GITHUB_TOKEN",
-    "commitArgs": "-S"
+    "releaseName": "v${version}",
+    "web": true
   },
   "npm": {
+    "//": "Private repo for now. We have @angellist npm namespace now, so could publish there in the future.",
     "publish": false,
     "private": true
   }
