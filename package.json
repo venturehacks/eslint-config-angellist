@@ -12,7 +12,8 @@
     "release": "release-it --disable-metrics",
     "release:major": "yarn release --increment=major",
     "release:minor": "yarn release --increment=minor",
-    "release:patch": "yarn release --increment=patch"
+    "release:patch": "yarn release --increment=patch",
+    "release:beta": "yarn release --preRelease"
   },
   "devDependencies": {
     "auto-changelog": "2.4.0",
