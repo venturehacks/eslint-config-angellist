@@ -22,7 +22,7 @@ yarn add --dev \
   '@typescript-eslint/parser@5.13.0' \
   'eslint@8.10.0' \
   'eslint-config-airbnb-base@15.0.0' \
-  'eslint-config-prettier@8.4.0' \
+  'eslint-config-prettier@8.5.0' \
   'eslint-import-resolver-typescript@2.5.0' \
   'eslint-plugin-compat@4.0.2' \
   'eslint-plugin-import@2.25.4' \
@@ -31,7 +31,8 @@ yarn add --dev \
   'eslint-plugin-prettier@4.0.0' \
   'eslint-plugin-react@7.29.2' \
   'eslint-plugin-react-hooks@4.3.0' \
-  'eslint-plugin-typescript-sort-keys@2.1.0'
+  'eslint-plugin-typescript-sort-keys@2.1.0' \
+  'prettier@2.5.1'
 ```
 
 ### 3. Modify your ESLint config
