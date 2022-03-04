@@ -184,14 +184,10 @@ module.exports = {
     'no-unsafe-finally': 'error',
     'no-unused-labels': 'error',
     'no-unused-vars': 'off',
-    'no-use-before-define': [
-      'error',
-      {
-        classes: true,
-        functions: false,
-        variables: false,
-      },
-    ],
+    'no-shadow': 'off', // covered by @typescript-eslint/no-shadow
+    '@typescript-eslint/no-shadow': ['error'],
+    'no-use-before-define': 'off',  // covered by @typescript-eslint/no-use-before-define
+    "@typescript-eslint/no-use-before-define": ['error'],
     'no-var': 'error',
     'object-shorthand': 'error',
     'one-var': 'error',
