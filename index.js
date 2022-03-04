@@ -79,15 +79,7 @@ module.exports = {
       },
     ],
     '@typescript-eslint/no-use-before-declare': 'off',
-    '@typescript-eslint/no-use-before-define': [
-      'error',
-      {
-        classes: true,
-        functions: false,
-        typedefs: false,
-        variables: false,
-      },
-    ],
+    '@typescript-eslint/no-use-before-define': 'off', // typescript compiler covers this rule
     '@typescript-eslint/no-var-requires': 'error',
     '@typescript-eslint/prefer-for-of': 'error',
     '@typescript-eslint/prefer-function-type': 'error',
