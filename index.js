@@ -89,12 +89,7 @@ module.exports = {
     'arrow-body-style': 'off',
     'arrow-parens': ['off', 'as-needed'],
     camelcase: 'off',
-    'class-methods-use-this': [
-      'error',
-      {
-        exceptMethods: ['render', 'componentDidMount'],
-      },
-    ],
+    'class-methods-use-this': 'off',
     complexity: 'off',
     'consistent-return': 'off',
     'constructor-super': 'error',
