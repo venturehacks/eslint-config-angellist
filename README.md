@@ -9,7 +9,7 @@ Our default export contains all of our ESLint rules, including ECMAScript 6+, Re
 ### 1. Install config as dependency
 
 ```sh
-yarn add --dev 'git+https://github.com/venturehacks/eslint-config-angellist#1.0.0-beta.0'
+yarn add --dev 'git+https://github.com/venturehacks/eslint-config-angellist#1.0.0'
 ```
 
 ### 2. Install all peer dependencies
