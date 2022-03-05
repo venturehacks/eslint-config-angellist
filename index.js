@@ -116,6 +116,12 @@ module.exports = {
     'import/no-unresolved': 'off',
     'import/prefer-default-export': 'off',
     'jsx-a11y/no-autofocus': 'off',
+    'jsx-a11y/aria-role': [
+      'error',
+      {
+        'ignoreNonDOM': true,
+      }
+    ],
     'linebreak-style': 'off',
     'lines-between-class-members': [
       'error',
