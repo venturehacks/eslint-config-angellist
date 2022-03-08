@@ -35,21 +35,29 @@ module.exports = {
   },
 
   rules: {
-    '@typescript-eslint/ban-ts-comment': [
-      'warn',
-      {
-        'ts-expect-error': 'allow-with-description',
-        'ts-ignore': 'allow-with-description',
-        'ts-nocheck': 'allow-with-description',
-      }
-    ],
+    // NOTE(drew): Tried this one out, wasn't exceptionally useful.
+    // Often, we list the most important type first, or there is a
+    // natual progression to string literal types (sm, md, lg, ...)
+    // '@typescript-eslint/sort-type-union-intersection-members': ['error'],
+
+    // NOTE(drew): Tried this one out.. looks pretty useful, but
+    // also quite a big hammer. There are cases where I'm not sure
+    // our typecasting matches data flow. Would be cool to enable
+    // this one in future.
+    // '@typescript-eslint/no-unnecessary-condition': [
+    //   'error',
+    //   {
+    //     allowConstantLoopConditions: true,
+    //   },
+    // ],
+
+    '@typescript-eslint/array-type': 'off',
+    '@typescript-eslint/explicit-module-boundary-types': 'off', // too strict
+    '@typescript-eslint/type-annotation-spacing': ['error'],
+    '@typescript-eslint/prefer-includes': ['error'],
+    '@typescript-eslint/ban-tslint-comment': ['error'],
+    '@typescript-eslint/no-confusing-non-null-assertion': ['error'],
     '@typescript-eslint/adjacent-overload-signatures': 'error',
-    '@typescript-eslint/array-type': [
-      'warn',
-      {
-        default: 'array',
-      },
-    ],
     '@typescript-eslint/ban-ts-ignore': 'off',
     '@typescript-eslint/ban-types': 'error',
     '@typescript-eslint/camelcase': 'off',
@@ -59,8 +67,17 @@ module.exports = {
     '@typescript-eslint/member-delimiter-style': 'off',
     '@typescript-eslint/no-empty-function': 'off',
     '@typescript-eslint/no-empty-interface': 'error',
-    '@typescript-eslint/no-explicit-any': 'off',
     '@typescript-eslint/no-misused-new': 'error',
+    '@typescript-eslint/ban-ts-comment': [
+      'error',
+      {
+        'ts-expect-error': 'allow-with-description',
+        'ts-ignore': true,
+        'ts-nocheck': true,
+        'ts-check': false,
+        minimumDescriptionLength: 10, // characters
+      },
+    ],
     '@typescript-eslint/no-namespace': [
       'error',
       {
@@ -84,16 +101,15 @@ module.exports = {
     '@typescript-eslint/prefer-for-of': 'error',
     '@typescript-eslint/prefer-function-type': 'error',
     '@typescript-eslint/prefer-namespace-keyword': 'error',
-    '@typescript-eslint/type-annotation-spacing': 'off',
     '@typescript-eslint/unified-signatures': 'error',
     'arrow-body-style': 'off',
     'arrow-parens': ['off', 'as-needed'],
-    camelcase: 'off',
+    'camelcase': 'off',
     'class-methods-use-this': 'off',
-    complexity: 'off',
+    'complexity': 'off',
     'consistent-return': 'off',
     'constructor-super': 'error',
-    curly: 'error',
+    'curly':  ['error', 'multi-line', 'consistent'],
     'default-case': 'off',
     'dot-notation': 'error',
     'eol-last': 'off',
@@ -222,10 +238,6 @@ module.exports = {
       },
     ],
     'react/jsx-uses-vars': 'error',
-    // "react/jsx-handler-names": ['error', {
-    //   "eventHandlerPrefix": '(handle|submit|select)',
-    //   "eventHandlerPropPrefix": 'on',
-    // }],
     'react/prop-types': 'off',
     'react/sort-comp': [
       'error',
