@@ -1,10 +1,11 @@
 module.exports = {
   extends: [
     'airbnb-base',
-    'plugin:compat/recommended',
     'plugin:@typescript-eslint/recommended',
+    'plugin:compat/recommended',
     'plugin:import/errors',
     'plugin:import/warnings',
+    'plugin:jsx-a11y/recommended',
     'plugin:prettier/recommended',
   ],
   parser: '@typescript-eslint/parser',
