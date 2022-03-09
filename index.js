@@ -54,6 +54,9 @@ module.exports = {
     // NOTE(drew): turning off until a dedicated PR adds it
     '@typescript-eslint/no-explicit-any': 'off',
 
+    // NOTE(drew): could be useful in the future to reduce bogus types
+    '@typescript-eslint/ban-types': 'off',
+
     '@typescript-eslint/array-type': 'off',
     '@typescript-eslint/explicit-module-boundary-types': 'off', // too strict
     '@typescript-eslint/type-annotation-spacing': ['error'],
@@ -62,7 +65,6 @@ module.exports = {
     '@typescript-eslint/no-confusing-non-null-assertion': ['error'],
     '@typescript-eslint/adjacent-overload-signatures': 'error',
     '@typescript-eslint/ban-ts-ignore': 'off',
-    '@typescript-eslint/ban-types': 'error',
     '@typescript-eslint/camelcase': 'off',
     '@typescript-eslint/explicit-function-return-type': 'off',
     '@typescript-eslint/explicit-member-accessibility': 'off',
