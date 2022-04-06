@@ -2,6 +2,8 @@ module.exports = {
   extends: [
     'airbnb-base',
     'plugin:@typescript-eslint/recommended',
+    'plugin:react/recommended',
+    'plugin:react/jsx-runtime',
     'plugin:compat/recommended',
     'plugin:import/errors',
     'plugin:import/warnings',
@@ -244,7 +246,11 @@ module.exports = {
       },
     ],
     'react/jsx-uses-vars': 'error',
-    'react/prop-types': 'off',
+    'react/jsx-boolean-value': ['error', 'never'],
+    'react/jsx-uses-react': 'off',
+    'react/react-in-jsx-scope': 'off',
+    'react/no-unescaped-entities': 'off',
+    'react/prop-types': 'off', // covered by TypeScript
     'react/sort-comp': [
       'error',
       {
